@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="text-center">
+      <div class="mockup-phone h-175">
+        <div class="mockup-phone-camera"></div>
+        <div
+          class="mockup-phone-display text-white grid place-content-center bg-neutral-900"
+        >
+          <h1 class="text-[#E2136E] font-bold">CashMe</h1>
+          <!-- First Screen Start  -->
+          <div class="" id="firstScreen">
+            <fieldset
+              class="fieldset bg-white border-base-300 rounded-box w-xs border p-4"
+            >
+              <legend class="fieldset-legend"></legend>
+
+              <label class="label text-black">Number</label>
+              <input
+                type="text"
+                class="input outline-0 bg-gray-200 placeholder:text-gray-500 text-black"
+                placeholder="Enter Your Number"
+                id="number"
+              />
+
+              <label class="label text-black">Password</label>
+              <input
+                type="password"
+                class="input outline-0 bg-gray-200 placeholder:text-gray-500 text-black"
+                placeholder="Enter 4 Digit Pin"
+                id="pin"
+              />
+
+              <button class="btn btn-neutral mt-4 bg-[#E2136E]" id="loginBtn">
+                Login
+              </button>
+
+              <div class="mt-5 hidden" id="error">
+                <div role="alert" class="alert alert-error">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 shrink-0 stroke-current"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Error! Something Is Missing.</span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <!-- First Screen End  -->
+
+          <!-- Second Screen Start  -->
+          <div class="mt-2 hidden" id="secondScreen">
+            <fieldset
+              class="fieldset bg-white border-base-300 rounded-box w-xs border p-4"
+            >
+              <div class="text-white font-bold flex justify-between">
+                <div
+                  class="bg-[#E2136E] py-2 px-2 rounded-2xl font-bold"
+                  id="balance"
+                >
+                  Current Balance:100 BDT
+                </div>
+                <div
+                  class="bg-[#E2136E] py-2 px-2 rounded-2xl font-bold cursor-pointer hover:bg-white hover:text-black border border-gray-200 duration-500"
+                  id="logOutBtn"
+                >
+                  Log Out
+                </div>
+              </div>
+              <div class="border border-gray-400 w-full"></div>
+              <div class="text-black text-start font-bold text-2xl mt-3">
+                <h1>
+                  🔥 Welcome to <span class="text-[#E2136E]">CashMe</span>!
+                </h1>
+              </div>
+              <div class="text-gray-400 text-start">
+                <p>
+                  Enjoy easy and convenient financial services with us. Cashout
+                  charge is low
+                </p>
+              </div>
+
+              <div class="flex justify-between mt-5">
+                <div
+                  class="w-[123px] h-[90px] bg-green-600 rounded-2xl cursor-pointer"
+                  id="addMoneytBtn"
+                >
+                  <img
+                    src="images/wallet 1.png"
+                    alt="wallet 1.png"
+                    class="m-auto pt-4"
+                  />
+                  <h3 class="pt-2">Add Money</h3>
+                </div>
+                <div
+                  class="w-[123px] h-[90px] bg-red-700 rounded-2xl cursor-pointer"
+                  id="cashOutBtn"
+                >
+                  <img
+                    src="images/send 1.png"
+                    alt="send 1.png"
+                    class="m-auto pt-4"
+                  />
+                  <h3 class="pt-2">CashOut</h3>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <!-- Second Screen End  -->
+
+          <!-- Third Screen Start  -->
+
+          <div class="mt-2 hidden" id="thirdScreen">
+            <fieldset
+              class="fieldset bg-white border-base-300 rounded-box w-xs border p-4"
+            >
+              <h1 class="text-black font-bold text-2xl">Add Your Money</h1>
+
+              <label class="label text-black">Ammount</label>
+              <input
+                type="text"
+                class="input outline-0 bg-gray-200 placeholder:text-gray-500 text-black"
+                placeholder="Enter Your Ammount"
+                id="addAmmount"
+              />
+
+              <label class="label text-black">Password</label>
+              <input
+                type="password"
+                class="input outline-0 bg-gray-200 placeholder:text-gray-500 text-black"
+                placeholder="Enter 4 Digit Pin"
+                id="addPin"
+              />
+
+              <button class="btn btn-neutral mt-4 bg-green-500" id="addBtn">
+                Add Money
+              </button>
+
+              <div class="mt-5 hidden" id="addError">
+                <div role="alert" class="alert alert-error">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 shrink-0 stroke-current"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Error! Something Is Missing.</span>
+                </div>
+              </div>
+              <div
+                role="alert"
+                class="alert alert-success mt-5 hidden"
+                id="addSuccess"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 shrink-0 stroke-current"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span
+                  >Congrs..! <br />
+                  Your Money Added successfully</span
+                >
+              </div>
+
+              <button
+                class="btn btn-soft btn-info hidden rounded-full w-fit mt-2"
+                id="successBack"
+              >
+                Go Back
+              </button>
+            </fieldset>
+          </div>
+          <!-- Third Screen End  -->
+
+          <!-- Fourth Screen Start  -->
+          <div class="mt-2 hidden" id="fourthScreen">
+            <fieldset
+              class="fieldset bg-white border-base-300 rounded-box w-xs border p-4"
+            >
+              <h1 class="text-black font-bold text-2xl">CashOut</h1>
+
+              <label class="label text-black">Amount</label>
+              <input
+                type="text"
+                class="input outline-0 bg-gray-200 placeholder:text-gray-500 text-black"
+                placeholder="Enter Your Ammount"
+                id="outAmmount"
+              />
+
+              <label class="label text-black">Password</label>
+              <input
+                type="password"
+                class="input outline-0 bg-gray-200 placeholder:text-gray-500 text-black"
+                placeholder="Enter 4 Digit Pin"
+                id="outPin"
+              />
+
+              <button class="btn btn-neutral mt-4 bg-red-600" id="outBtn">
+                CashOut
+              </button>
+
+              <div class="mt-5 hidden" id="outError">
+                <div role="alert" class="alert alert-error">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 shrink-0 stroke-current"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Error! Something Is Missing.</span>
+                </div>
+              </div>
+              <div
+                role="alert"
+                class="alert alert-success mt-5 hidden"
+                id="outSuccess"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 shrink-0 stroke-current"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span
+                  >Congrs..! <br />
+                  Your Money Added successfully</span
+                >
+              </div>
+
+              <button
+                class="btn btn-soft btn-info hidden rounded-full w-fit mt-2"
+                id="outBack"
+              >
+                Go Back
+              </button>
+            </fieldset>
+          </div>
+          <!-- Fourth Screen End  -->
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
